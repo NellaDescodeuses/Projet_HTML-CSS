@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet Formulaire</title>
+  </head>
+  <body>
+    <fieldset class="bleu">
+      <legend>Votre identité</legend>
+        <form>
+          <ol>
+            <li>
+              <label for="nom">Nom :</label>
+              <input type="text" name="nom" id="nom" placeholder="Nom">
+            </li>
+            <li>
+              <label for="prénom">Prénom :</label>
+              <input type="text" name="prénom" id="prénom" placeholder="Prénom">
+            </li>
+            <li>
+              <label for="email">Adresse mail :</label>
+              <input type="email" name="email" id="email" placeholder="Adresse mail">
+            </li>
+          </ol>
+        </form>
+    </fieldset>
+    <fieldset class="violet">
+      <legend>Adresse de livraison</legend>
+        <form >
+          <ol>
+            <li>
+              Adresse :
+              <textarea cols="15" rows="4"></textarea>
+            </li>
+            <li>
+              <label for="postal">Code postal :</label>
+              <input type="text" name="postal" id="postal" placeholder="Code postal">
+            </li>
+            <li>
+              <label for="ville">Ville :</label>
+              <input type="text" name="ville" id="ville" placeholder="Ville">
+            </li>
+          </ol>
+        </form>
+    </fieldset>
+    <fieldset class="rose">
+        <legend>Information de règlement</legend>
+        <form>
+          <ol>
+            <li>
+              <p>Type de carte bancaire</p>
+            </li>
+            <li>
+              <label for="visa">VISA</label>
+              <input type="radio" name="visa" value="visa">
+            </li>
+            <li>
+              <label for="mastercard">Mastercard</label>
+              <input type="radio" name="mastercard" value="mastercard">
+            </li>
+            <li>
+              <label for="numCard">Numéro de carte :</label>
+              <input type="text" name="num" id="numCard" placeholder="Numéro de carte">
+            </li>
+            <li>
+              <label for="code">Code de sécurité :</label>
+              <input type="text" name="code" id="code" placeholder="Code de sécurité">
+            </li>
+            <li>
+              <label for="titulaire">Nom du titulaire :</label>
+              <input type="text" name="titulaire" id="titulaire" placeholder="Nom du titulaire">
+            </li>
+          </ol>
+        </form>
+    </fieldset>
+    <button type="button" name="button">J'achète</button>
+  </body>
+</html>

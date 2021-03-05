@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'ballpark';
+  src: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/ballpark.woff"),url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/ballpark.eot"),url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/ballpark.ttf"), url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/ballpark.svg");
+}
+@font-face {
+  font-family: 'day_romanregular';
+  src: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/dayrom.woff"), url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/dayrom.eot"), url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/dayrom.svg"), url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/polices/dayrom.ttf");
+}
+h2{
+  font-family: 'day_romanregular',serif;
+}
+body{
+  background: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/fond_jaune.png");
+  font-family: sans-serif;
+  margin: auto;
+}
+#bloc_page{
+  width: 60%; /* défini la largeur*/
+  margin: auto; /* marge exterieur*/
+}
+header{
+  display: flex; /*le conteneur devient flexible*/
+  justify-content: space-between;
+  align-items: flex-end;
+  background: url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/separateur.png) repeat-x bottom;
+}
+#titre_principal{
+  display: flex;
+  flex-direction: column;
+}
+#logo{
+  display: flex;
+}
+#logo img{
+  width: 59px;
+  height: 60px;
+}
+#logo h1{
+  font-family:'ballpark',serif;
+  font-size: 2em; /* taille de la police em: permet au utilisateur de changer la taille*/
+
+}
+header h2{
+  font-size: 1,5em;
+}
+nav{
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-transform: uppercase; /* lettres en majuscules*/
+  font-family: 'day_romanregular',serif;
+}
+nav ul{
+  list-style-type: none; /* enlève les puces*/
+  display: flex;
+}
+nav li{
+  margin-right:10px; /*espace entre les mots*/
+}
+nav a:hover{/* permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur*/
+  color: #760001;
+  border-bottom: 3px solid #760001;
+}
+#banniere_image{
+  margin-top: 15px;
+  padding-right: 1px;
+  height: 200px;
+  border-radius: 5px;
+  background: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/sanfrancisco.jpg") no-repeat;
+  position: relative;
+  margin-bottom: 25px;
+  width:auto;
+}
+#banniere_description{
+  position: absolute;
+  bottom: 0;
+  border-radius:5px;
+  width: 100%;
+  height: 33px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(24,24,24,0.8);
+  color: white;
+  font-size: 0.8em;
+}
+.bouton_rouge{
+  position: initial;
+  margin-top: -51px;
+  margin-right: 13px;
+  float: right;
+  width: 10%;
+  height:25px; /*taille du bouton*/
+  padding: 3px 8px 0px 8px;/*marges intérieures*/
+  text-align: center;
+  background: url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/fond_degraderouge.png);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+section{
+  display: flex;
+  margin-top: -19px;
+}
+article{
+  text-align: justify;
+}
+#social{
+  display: flex;
+}
+aside{
+  position: relative;
+  margin:44px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 65%;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  height: 350px;
+}
+aside h2{
+  text-align: center;
+}
+#photo_zozor{
+  border: 1px black solid;
+  position: inherit;
+  left:33px;
+}
+#fleche_bulle{
+  position: absolute;
+  top: 16px;
+  left: -12px;
+}
+
+footer{
+  display: flex;
+  background: url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/ico_top.png) no-repeat top center,
+              url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/separateur.png) repeat-x top; /*répète l'image sur toute la ligne du haut*/
+}
+.container{
+  font-size: smaller;
+  color: grey;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container h2{
+  text-transform: uppercase; /* lettres en majuscules*/
+  font-size: 0.9em;
+}
+#tweet{
+  float: left;
+  width: 40%;
+}
+.photos{
+  display: flex;
+  flex-direction: column;
+  float:left;
+}
+#photos{
+  display: flex;
+  width: 30%;
+}
+#photos img{
+  margin-left: 5px;
+}
+#liste_amis{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 30%;
+  margin-left: 32px;
+  padding-left: 17px;
+}
+#liste_amis ul{
+  display: flex;
+  padding-left: 17px;
+  width: max-content;
+  margin-top: 0px;
+}
+#amis1, #amis2{
+  list-style-type: none; /* enlève les puces*/
+  list-style-image: url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/ico_liensexterne.png);
+}
+#amis1{
+  float: left;
+}
+#amis2{
+  float: right;
+  margin-left: 50px;
+}

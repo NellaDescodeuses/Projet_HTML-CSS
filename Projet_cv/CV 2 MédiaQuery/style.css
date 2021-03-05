@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;/*la page défile sans sacader*/
+}
+@font-face {
+  font-family: 'Spirax', cursive;
+  src:url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_cv/Polices_cv/Spirax/Spirax-Regular.ttf");
+}
+@@font-face {
+  font-family: 'Gupter', serif;
+  src: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_cv/Polices_cv/Gupter/Gupter-Regular.ttf");
+}
+body{
+  background-image: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_cv/Image_cv/fond_bienvenue.jpg");
+  background-size: cover;
+  display: flex;
+  margin: 0%;
+  color: white;
+  width: 100%;
+}
+h1,h2, h3{
+  text-align: center;
+  font-family: 'Spirax', cursive;
+}
+li, p, button{
+  font-family: 'Gupter', serif;
+  text-align: center;
+}
+button{
+  margin: 5%;
+}
+.gauche{
+  position: fixed;/*l'entête- navbar... ne bouge pas*/
+  width: 20%;
+  background-color: lightgrey;
+  padding-bottom: 100%;
+  margin: 0%;
+}
+.gauche h2{
+  font-size: 1.5em;
+  margin-top: 13%;
+  color: #4D3650;
+}
+.bas{
+  background-color: lightgrey;
+  display: inherit;
+}
+.bas img{
+  width: 15%;
+  margin-left: 12%;
+}
+.bas a:hover{
+  color:#4D3650;
+}
+nav{
+  margin-top: 18%;
+}
+#logo img{
+  margin: 18%;
+  width: 60%;
+}
+nav img{
+  width: 7%;
+  margin-left: 8%;
+  /*margin-right: 20%;*/
+  float: right;
+}
+nav a{
+  color: #4D3650;
+}
+nav li{
+  font-family: 'Spirax', cursive;
+  font-size: 1.5em;
+  list-style: none;
+  margin: 2%;
+}
+nav ul:hover{
+  color: white;
+}
+footer{
+  margin-top: 40%;
+}
+.droite{
+  width: 80%;
+  margin-left:auto;
+}
+.droite h2{
+  font-size: 2.5em;
+}
+#acceuil{
+  background-image: url("Image_cv/fond_acceuil.jpg");
+  background-size: cover;
+  padding: 26%;
+}
+#acceuil h1{
+  font-size: 3em;
+}
+#apropos{
+  display: flex;
+  background-image: url("Image_cv/fond_expérience.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2em;
+  padding-top: 17%;
+  padding-bottom: 17%;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+#apropos h1{
+  font-size: 2.5em;
+  padding-top: 13%;
+}
+#apropos p{
+  font-size: 0.6em;
+  padding-top: 15%;
+}
+#compétences{
+  background-image: url("Image_cv/fond_compétence.png");
+  background-size: cover;
+  padding: 15%;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: lightgrey;
+}
+#expérience{
+  background-image: url("Image_cv/fond_expérience.jpg");
+  background-size: cover;
+  padding: 16%;
+}
+#hobbies{
+  background-image: url("Image_cv/fond_compétence.png");
+  background-size: cover;
+  padding: 25%;
+}
+.loisirs{
+  display: flex;
+  justify-content: center;
+}
+#contact{
+  background-image: url("Image_cv/fond_acceuil.jpg");
+  background-size: cover;
+  padding: 27%;
+}
+#contact a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+#contact a:hover{
+  color: white;
+}
+/*bouton retour haut de page*/
+.top{
+  margin-top: -6%;
+  margin-right: 5%;
+  float: right;
+  height:25px; /*taille du bouton*/
+  padding: 3px 8px 0px 8px;/*marges intérieures*/
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(black, #863545, #421526, black);/* fond couleur dégradé*/
+}
+/*page d'acceuil du CV*/
+.bienvenue{
+  font-family: 'Spirax', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bienvenue a{
+  color: white;
+  font-size: 75px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+/*animation de la page d'accueil*/
+.bienvenue a:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  margin-top: -11%;
+  margin-left: 15%;
+}
+.bienvenue a:hover:before{
+  animation: animate-border 1s linear forwards;
+}
+@keyframes animate-border{
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #4D3650;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #4D3650;
+    border-right-color: #4D3650;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #fcfcfc;
+    border-right-color: #fcfcfc;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+.bienvenue a:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  margin-left: -15%;
+  margin-top: 11%;
+}
+.bienvenue a:hover:after{
+  animation: animate-border-2 1s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes animate-border-2{
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #4D3650;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #4D3650;
+    border-left-color: #4D3650;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #fcfcfc;
+    border-left-color: #fcfcfc;
+  }
+}
+/*pour les tablette*/
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Styles pour cette Media Queries */
+}
